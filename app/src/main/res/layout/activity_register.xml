@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#083c5d"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/userNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textSize="24sp"
+        android:layout_above="@id/passwordText"
+        android:padding="5dp"
+        android:background="#ffbb39"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textSize="24sp"
+        android:padding="5dp"
+        android:layout_above="@id/signupButton"
+        android:background="#ffbb39"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:backgroundTint="#1d2731"
+        android:text="Signup"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signupButton"
+        android:textSize="24sp"
+        android:text="Existing User... Login here"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffbb39"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+</RelativeLayout>
